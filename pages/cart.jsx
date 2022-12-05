@@ -106,7 +106,7 @@ const Cart = () => {
             </tr>
           </tbody>
           <tbody>
-            {cart.products.map((product) => (
+            {cart?.products?.map((product) => (
               <tr className={styles.tr} key={product._id}>
                 <td>
                   <div className={styles.imgContainer}>
@@ -123,7 +123,7 @@ const Cart = () => {
                 </td>
                 <td>
                   <span className={styles.extras}>
-                    {product.extras.map((extra) => (
+                    {product?.extras?.map((extra) => (
                       <span key={extra._id}>{extra.text}, </span>
                     ))}
                   </span>

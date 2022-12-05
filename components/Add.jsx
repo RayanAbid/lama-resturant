@@ -125,7 +125,7 @@ const Add = ({ setClose }) => {
             </button>
           </div>
           <div className={styles.extraItems}>
-            {extraOptions.map((option) => (
+            {extraOptions?.map((option) => (
               <span key={option.text} className={styles.extraItem}>
                 {option.text}
               </span>

@@ -35,7 +35,7 @@ const Product = ({ pizza }) => {
   };
 
   const handleClick = () => {
-    dispatch(addProduct({...pizza, extras, price, quantity}));
+    dispatch(addProduct({ ...pizza, extras, price, quantity }));
   };
 
   return (
@@ -66,7 +66,7 @@ const Product = ({ pizza }) => {
         </div>
         <h3 className={styles.choose}>Choose additional ingredients</h3>
         <div className={styles.ingredients}>
-          {pizza.extraOptions.map((option) => (
+          {pizza.extraOptions?.map((option) => (
             <div className={styles.option} key={option._id}>
               <input
                 type="checkbox"

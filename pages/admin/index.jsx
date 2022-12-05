@@ -51,7 +51,7 @@ const Index = ({ orders, products }) => {
               <th>Action</th>
             </tr>
           </tbody>
-          {pizzaList.map((product) => (
+          {pizzaList?.map((product) => (
             <tbody key={product._id}>
               <tr className={styles.trTitle}>
                 <td>
@@ -93,7 +93,7 @@ const Index = ({ orders, products }) => {
               <th>Action</th>
             </tr>
           </tbody>
-          {orderList.map((order) => (
+          {orderList?.map((order) => (
             <tbody key={order._id}>
               <tr className={styles.trTitle}>
                 <td>{order._id.slice(0, 5)}...</td>

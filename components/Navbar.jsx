@@ -8,6 +8,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.item}>
+        
         <Image src="/img/logo.png" alt="" width="160px" height="69px" />
       </div>
 
